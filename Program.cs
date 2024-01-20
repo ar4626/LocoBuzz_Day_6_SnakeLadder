@@ -12,9 +12,11 @@ namespace SnakeLadder
         {
             Console.WriteLine("Welcome to Snake and Ladder Game!");
             int playerPosition = 0;
+            int countDice=0;
 
            while (playerPosition < 101)
             {
+                countDice++;
                 Console.WriteLine($"Player is at position {playerPosition}");
                 //Console.WriteLine("Press Enter to Roll Dice");
                 //Console.ReadLine();
@@ -50,7 +52,7 @@ namespace SnakeLadder
                 }
 
             }
-            Console.ReadLine();
+            Console.WriteLine($"The Dice was Rolled {countDice} times.");     Console.ReadLine();
         }
 
         static int RollDice()
