@@ -43,13 +43,13 @@ namespace SnakeLadder
                         break;
                 }
 
-                /*if (playerPosition == 100)
+                if (playerPosition == 100)
                 {
                     Console.WriteLine("YEEE! You WON the game.");
                     break;
-                }*/
+                }
 
-           }
+            }
             Console.ReadLine();
         }
 
