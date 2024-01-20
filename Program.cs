@@ -13,15 +13,13 @@ namespace SnakeLadder
             Console.WriteLine("Welcome to Snake and Ladder Game!");
             int playerPosition = 0;
 
-            while (playerPosition < 101)
+           while (playerPosition < 101)
             {
                 Console.WriteLine($"Player is at position {playerPosition}");
                 //Console.WriteLine("Press Enter to Roll Dice");
                 //Console.ReadLine();
 
-                //int dice = RollDice();
-                Random random = new Random();
-                int dice = random.Next(1, 7);
+                int dice = RollDice();
                 Console.WriteLine($"Rolled dice {dice}");
 
                 int option = chechOption();
@@ -45,13 +43,13 @@ namespace SnakeLadder
                         break;
                 }
 
-                if (playerPosition == 100)
+                /*if (playerPosition == 100)
                 {
                     Console.WriteLine("YEEE! You WON the game.");
                     break;
-                }
+                }*/
 
-            }
+           }
             Console.ReadLine();
         }
 
