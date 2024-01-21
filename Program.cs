@@ -31,7 +31,11 @@ namespace SnakeLadder
                         Console.WriteLine($"No Play, Player {currentPlayer + 1} stays at the same position.");
                         break;
                     case 2:
+                        if (playerPositions[currentPlayer] + dice <= 100)
+                        {
+
                         playerPositions[currentPlayer] += dice;
+                        }
                         Console.WriteLine($"Player {currentPlayer + 1} got a Ladder! Move ahead by {dice} position");
                         break;
                     case 3:
